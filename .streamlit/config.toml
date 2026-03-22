@@ -1,0 +1,24 @@
+[theme]
+base = "dark"
+primaryColor = "#00d4ff"
+backgroundColor = "#080c10"
+secondaryBackgroundColor = "#0d1117"
+textColor = "#e6edf3"
+font = "sans serif"
+
+[server]
+headless = true
+enableCORS = false
+
+[browser]
+gatherUsageStats = false
+```
+- Clicca **"Commit changes"**
+
+**3. La struttura finale deve essere:**
+```
+C-ATR/
+├── app.py
+├── requirements.txt
+└── .streamlit/
+    └── config.toml
