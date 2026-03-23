@@ -1,0 +1,45 @@
+{
+  "name": "V2 - Volume & ATR",
+  "short_name": "V2",
+  "description": "Real-Time Volume & ATR Volatility Monitor",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#080c10",
+  "theme_color": "#00c850",
+  "icons": [
+    {
+      "src": "/app/static/icon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
+```
+
+5. Clicca **"Commit changes"**
+
+---
+
+**PASSO 4 — Verifica `.streamlit/config.toml`**
+
+1. Torna alla pagina principale → clicca sulla cartella **`.streamlit`**
+2. Se dentro c'è già `config.toml`, cliccaci → matita → verifica che contenga questa riga:
+```
+enableStaticServing = true
+```
+
+Se non c'è, aggiungi la riga sotto `[server]` e fai Commit. Se il file è corretto, non toccare nulla.
+
+---
+
+**Struttura finale che devi vedere:**
+```
+C-ATR/
+├── .streamlit/
+│   └── config.toml
+├── static/
+│   ├── icon.png
+│   └── manifest.json
+├── app.py
+└── requirements.txt
