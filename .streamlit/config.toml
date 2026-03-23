@@ -9,16 +9,7 @@ font = "sans serif"
 [server]
 headless = true
 enableCORS = false
+enableStaticServing = true
 
 [browser]
 gatherUsageStats = false
-```
-- Clicca **"Commit changes"**
-
-**3. La struttura finale deve essere:**
-```
-C-ATR/
-├── app.py
-├── requirements.txt
-└── .streamlit/
-    └── config.toml
