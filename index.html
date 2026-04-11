@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V + ATR</title>
+    <link rel="icon" type="image/png" sizes="512x512" href="icon.png">
+    <link rel="apple-touch-icon" sizes="512x512" href="icon.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="V + ATR">
+    <meta name="theme-color" content="#080c10">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: #080c10; color: #e6edf3;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            display: flex; flex-direction: column;
+            align-items: center; justify-content: center;
+            min-height: 100vh; text-align: center;
+        }
+        .icon { width: 96px; height: 96px; margin-bottom: 1.2rem; border-radius: 50%; }
+        h1 { font-size: 1.8rem; font-weight: 700; color: #00ff88; margin-bottom: 0.5rem; }
+        p { color: #8b949e; font-size: 0.9rem; margin-bottom: 2rem; }
+        .spinner {
+            width: 40px; height: 40px; border: 3px solid #1b2432;
+            border-top-color: #00d4ff; border-radius: 50%;
+            animation: spin 0.8s linear infinite; margin-bottom: 1rem;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+        .status { color: #00d4ff; font-size: 0.8rem; }
+    </style>
+</head>
+<body>
+    <img src="icon.png" alt="V + ATR" class="icon">
+    <h1>V + ATR</h1>
+    <p>Volume &amp; Volatility Monitor</p>
+    <div class="spinner"></div>
+    <div class="status">Caricamento app...</div>
+    <script>
+        setTimeout(function() {
+            window.location.href = 'https://nknnkge48cbwofqzffxdzb.streamlit.app';
+        }, 1500);
+    </script>
+</body>
+</html>
