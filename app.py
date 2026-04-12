@@ -681,13 +681,11 @@ if run and ticker_input.strip():
                             # Direction arrow + var%
                             vp = b.get("var_pct")
                             if dire == "up":
-                                vp_str = f'+{vp:.1f}%' if vp is not None else ''
-                                arrow = f'<span style="color:#00ff88;font-size:.75rem;white-space:nowrap;">\u25b2 {vp_str}</span>'
+                                arrow = '<span style="color:#00ff88;font-size:.75rem;">▲</span>'
                             elif dire == "down":
-                                vp_str = f'{vp:.1f}%' if vp is not None else ''
-                                arrow = f'<span style="color:#ff4757;font-size:.75rem;white-space:nowrap;">\u25bc {vp_str}</span>'
+                                arrow = '<span style="color:#ff4757;font-size:.75rem;">▼</span>'
                             else:
-                                arrow = '<span style="color:#8b949e;font-size:.7rem;">\u2014</span>'
+                                arrow = '<span style="color:#8b949e;font-size:.7rem;">—</span>'
 
                             # Visual bar proportional to range
                             if rp > 0:
